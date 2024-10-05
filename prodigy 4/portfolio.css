@@ -1,0 +1,143 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
+    line-height: 1.6;
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Darker text color */
+}
+
+header {
+    position: relative;
+    background:  maroon; /* Red header color */
+    padding: 10px 0;
+}
+
+.header-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.circular-image {
+    width: 60px; /* Size of the circular image */
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #f8f9fa; /* Light border */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #f8f9fa; /* Light text for contrast */
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #722F37; /* Darker red for hero section */
+    color: white;
+}
+
+.profile-photo-square {
+    width: 150px; /* Square image size */
+    height: 150px; /* Maintain square aspect ratio */
+    border-radius: 10%; /* Optional rounded corners */
+}
+
+button {
+    padding: 10px 15px;
+    background: palevioletred; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838; /* Darker shade on hover */
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    margin: 10px 0;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-me {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-me h3 {
+    margin-bottom: 20px;
+}
+
+.contact-me a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #721c24; /* Darker icon color */
+    font-size: 24px;
+}
+
+.contact-me a:hover {
+    color: #dc3545; /* New color on hover */
+}
+
+/* Icon styles */
+.contact-me i {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-list {
+        flex-direction: column;
+    }
+
+    .header-image {
+        position: relative; /* Adjust for mobile view */
+    }
+}
